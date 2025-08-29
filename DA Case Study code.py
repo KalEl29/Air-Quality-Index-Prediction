@@ -9,7 +9,7 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_absolute_error, mean_squared_error
 
 # Step 1: Load Dataset
-df = pd.read_csv(r"C:\Users\netal\Documents\MITWPU\Assignments\DA\global_air_quality_dataset.csv")
+df = pd.read_csv("global_air_quality_dataset.csv")
 
 # Rename columns for easy coding
 df = df.rename(columns={
@@ -80,4 +80,5 @@ plt.scatter(y_test, y_pred_rf, alpha=0.5, color='green')
 plt.xlabel("Actual AQI")
 plt.ylabel("Predicted AQI")
 plt.title("Random Forest: Actual vs Predicted AQI")
+
 plt.show()
